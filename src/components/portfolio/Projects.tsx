@@ -17,81 +17,81 @@ interface Project {
 const projects: Project[] = [
   {
     index: "01",
-    year: "2025",
-    title: "Realtime collaboration engine",
-    client: "Lattice — Platform team",
+    year: "2025–2026",
+    title: "AI-based pricing & revenue optimization",
+    client: "MSc thesis · CompuSoft A/S",
     problem:
-      "Document collaboration was bottlenecked by a Postgres-row-locked architecture, causing 8s+ latency spikes and frequent merge conflicts at >12 concurrent editors.",
+      "Campsites and resorts price rooms and pitches mostly by intuition, leaving revenue on the table during peak windows and overpricing during slow ones. Goal: a data-driven decision-support tool that recommends prices from historical bookings, seasonality, and competitor signals.",
     decisions: [
-      "Designed a CRDT-based sync layer (Yjs) with delta compaction",
-      "Built a horizontally sharded WebSocket fleet on Cloudflare Durable Objects",
-      "Introduced per-document presence channels with backpressure",
+      "Built an ETL pipeline over historical bookings using pandas / dask for feature engineering",
+      "Trained baseline regression and gradient-boosted models with scikit-learn, evaluated against a heuristic benchmark",
+      "Designed a Dash/AnyChart visualization layer so domain experts can challenge recommendations, not just consume them",
     ],
-    stack: ["TypeScript", "Rust", "Yjs", "Cloudflare DO", "PostgreSQL"],
+    stack: ["Python", "scikit-learn", "pandas", "dask", "Dash", "GCP"],
     outcome: [
-      { metric: "94%", label: "p95 latency reduction" },
-      { metric: "4M", label: "concurrent editors / wk" },
-      { metric: "$1.2M", label: "infra cost saved / yr" },
+      { metric: "MSc", label: "thesis in collaboration w/ industry" },
+      { metric: "ETL", label: "reproducible feature pipeline" },
+      { metric: "UI", label: "explainable recommendations" },
     ],
     accent: "from-primary/30 to-transparent",
   },
   {
     index: "02",
-    year: "2024",
-    title: "Internal developer platform",
-    client: "Ramp — Infrastructure",
+    year: "2022–2024",
+    title: "Customer-facing platform rebuild",
+    client: "Sonrisa — Software Engineer",
     problem:
-      "Service onboarding took ~3 weeks across 6 teams. Inconsistent CI, observability, and deploy patterns made incident response slow and ownership unclear.",
+      "The product needed a faster delivery cadence and a more reliable backend while still serving European clients without regressions. Existing flows had thin test coverage and unclear ownership between backend and frontend.",
     decisions: [
-      "Built a golden-path service template (Backstage + Terraform modules)",
-      "Standardized OTel + SLO dashboards across 80+ services",
-      "Automated PR-based environment provisioning",
+      "Owned features end-to-end across Spring Boot REST APIs and Angular components",
+      "Brought critical modules to 100% unit-test coverage with JUnit + Mockito",
+      "Shipped on a two-week Scrum cadence with QA/PM, documenting features for clients and internal use",
     ],
-    stack: ["Go", "Terraform", "Backstage", "OpenTelemetry", "AWS"],
+    stack: ["Java", "Spring Boot", "Angular", "TypeScript", "JUnit", "Mockito"],
     outcome: [
-      { metric: "3w → 2d", label: "service onboarding" },
-      { metric: "62%", label: "MTTR reduction" },
-      { metric: "80+", label: "services migrated" },
+      { metric: "5 mo", label: "MVP delivered (phase 1)" },
+      { metric: "100%", label: "coverage on critical modules" },
+      { metric: "2-wk", label: "release cadence" },
     ],
     accent: "from-accent/30 to-transparent",
   },
   {
     index: "03",
-    year: "2023",
-    title: "Edge-native checkout SDK",
-    client: "Stripe — Acquiring",
+    year: "2023–2024",
+    title: "Government legacy backend rewrite",
+    client: "Sonrisa — Hungarian gov't project",
     problem:
-      "Hosted checkout was rendering at 1.8s LCP in emerging markets, hurting conversion. Legacy bundle was 480KB gzipped with synchronous payment-method probing.",
+      "A high-security, high-availability legacy system needed to be modernized without breaking the contracts existing services depended on. The team had to maintain functionality bit-for-bit while improving the runtime characteristics.",
     decisions: [
-      "Rewrote SDK as edge-rendered islands with streaming hydration",
-      "Implemented predictive payment-method preloading via Workers KV",
-      "Shipped a migration codemod for 14k+ merchant integrations",
+      "Rewrote the backend in Spring Boot, reusing trusted legacy services behind a clean boundary",
+      "Mapped existing behavior into integration tests before any rewrite to prevent silent regressions",
+      "Tightened request handling and persistence to improve response times under load",
     ],
-    stack: ["TypeScript", "Preact", "Cloudflare Workers", "WASM"],
+    stack: ["Java", "Spring Boot", "JPA/Hibernate", "MySQL", "Docker"],
     outcome: [
-      { metric: "1.8s → 380ms", label: "median LCP" },
-      { metric: "+11.4%", label: "checkout conversion" },
-      { metric: "62KB", label: "new bundle (gz)" },
+      { metric: "0", label: "regressions on rollout" },
+      { metric: "↑", label: "system efficiency" },
+      { metric: "HA", label: "high-availability target" },
     ],
     accent: "from-violet-500/30 to-transparent",
   },
   {
     index: "04",
-    year: "2022",
-    title: "ML feature store rewrite",
-    client: "Confidential fintech",
+    year: "2021–2022",
+    title: "Data-collection pipeline & time-tracking app",
+    client: "Webapix · WebGurus · CodeSpring — Intern",
     problem:
-      "Feature pipelines were duplicated across batch and online paths, causing training/serving skew and a 14% drift in fraud model precision over 6 months.",
+      "Two parallel internships: one team needed to stop manually collecting competitive data; another needed a small but production-grade time-tracking tool with proper auth and a snappy UX.",
     decisions: [
-      "Unified offline/online compute via a single DSL compiled to Spark + Flink",
-      "Introduced point-in-time correctness guarantees with bitemporal storage",
-      "Rolled out shadow-mode validation on production traffic",
+      "Built Laravel APIs and an automated web-scraping pipeline that removed hours of manual work per week",
+      "Shipped Vue/TypeScript components for the time-tracking app with OAuth 2.0 and lazy loading",
+      "Added animated frontend touches that made the data tool actually pleasant for non-engineers to use",
     ],
-    stack: ["Scala", "Flink", "Spark", "Iceberg", "Kafka"],
+    stack: ["Laravel", "PHP", "Vue", "TypeScript", "OAuth 2.0"],
     outcome: [
-      { metric: "0%", label: "training/serving skew" },
-      { metric: "+9pts", label: "fraud precision" },
-      { metric: "70%", label: "pipeline LOC removed" },
+      { metric: "hrs/wk", label: "manual work eliminated" },
+      { metric: "OAuth", label: "secure auth flow" },
+      { metric: "2", label: "production internships" },
     ],
     accent: "from-emerald-500/30 to-transparent",
   },
@@ -101,8 +101,8 @@ export const Projects = () => (
   <section id="work" className="container py-32">
     <SectionHeader
       eyebrow="Selected work"
-      title={<>Four projects, <em className="italic text-gradient font-light">measurable</em> outcomes.</>}
-      description="A small sample of work I can talk about publicly. Each entry is structured around the problem, the engineering decisions, and what shipped."
+      title={<>Four projects, <em className="italic text-gradient font-light">honest</em> outcomes.</>}
+      description="A small sample of the work I can talk about. Each entry is structured around the problem, the engineering decisions, and what actually shipped."
     />
 
     <div className="space-y-6">
@@ -118,7 +118,6 @@ export const Projects = () => (
           <div className={`absolute -top-32 -right-32 w-96 h-96 rounded-full bg-gradient-radial ${p.accent} opacity-0 group-hover:opacity-100 transition-opacity duration-700 blur-3xl pointer-events-none`} style={{background: `radial-gradient(circle, var(--tw-gradient-stops))`}} />
 
           <div className="relative grid md:grid-cols-12 gap-8">
-            {/* Left: meta */}
             <div className="md:col-span-4 flex md:flex-col justify-between">
               <div>
                 <div className="font-mono text-xs text-muted-foreground mb-2">{p.index} / {p.year}</div>
@@ -128,7 +127,6 @@ export const Projects = () => (
               <ArrowUpRight className="w-6 h-6 text-muted-foreground group-hover:text-primary group-hover:rotate-45 transition-all duration-500 self-start md:self-end" />
             </div>
 
-            {/* Right: content */}
             <div className="md:col-span-8 space-y-6">
               <div>
                 <div className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground mb-2">Problem</div>

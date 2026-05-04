@@ -36,7 +36,7 @@ export const Hero = () => {
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-60" />
             <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-400" />
           </span>
-          Available for senior IC and staff roles · Q3 2026
+          Open to graduate &amp; junior software engineer roles · 2026
         </motion.div>
 
         <h1 className="font-display text-[clamp(2.75rem,9vw,8.5rem)] leading-[0.95] tracking-tight max-w-[18ch]">
@@ -46,7 +46,7 @@ export const Hero = () => {
             transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
             className="block"
           >
-            Building <em className="italic text-gradient font-light">resilient</em>
+            Building <em className="italic text-gradient font-light">pragmatic</em>
           </motion.span>
           <motion.span
             initial={{ opacity: 0, y: 30 }}
@@ -54,7 +54,7 @@ export const Hero = () => {
             transition={{ duration: 0.9, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
             className="block"
           >
-            systems for
+            backends and
           </motion.span>
           <motion.span
             initial={{ opacity: 0, y: 30 }}
@@ -62,7 +62,7 @@ export const Hero = () => {
             transition={{ duration: 0.9, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
             className="block"
           >
-            modern product teams.
+            data-driven products.
           </motion.span>
         </h1>
 
@@ -73,10 +73,10 @@ export const Hero = () => {
           className="mt-12 grid md:grid-cols-[1fr_auto] gap-8 items-end"
         >
           <p className="max-w-xl text-base md:text-lg text-muted-foreground leading-relaxed">
-            I'm <span className="text-foreground">Alex Rivera</span>, a software engineer focused on
-            distributed systems, developer platforms, and crafted product surfaces. Most recently
-            I led the platform team at <span className="text-foreground">Lattice</span>, scaling
-            infrastructure from 50K to 4M weekly active users.
+            I'm <span className="text-foreground">Botond Füzi</span>, a software engineer working with{" "}
+            <span className="text-foreground">Java, Spring Boot and Angular</span>. Currently finishing
+            my MSc in Software Engineering at <span className="text-foreground">SDU</span>, with a
+            thesis on AI-based pricing and revenue optimization in collaboration with CompuSoft A/S.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3">
@@ -91,7 +91,7 @@ export const Hero = () => {
               href="#contact"
               className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full glass text-sm font-medium hover:border-primary/40 transition-colors"
             >
-              Start a conversation
+              Get in touch
             </a>
           </div>
         </motion.div>
@@ -102,9 +102,9 @@ export const Hero = () => {
           transition={{ duration: 1, delay: 0.8 }}
           className="mt-20 flex flex-wrap items-center gap-x-8 gap-y-3 text-xs font-mono text-muted-foreground"
         >
-          <span className="flex items-center gap-1.5"><MapPin className="w-3 h-3" /> Brooklyn, NY · UTC-5</span>
-          <span>10+ years shipping production software</span>
-          <span>Previously: Lattice · Stripe · Vercel (contract)</span>
+          <span className="flex items-center gap-1.5"><MapPin className="w-3 h-3" /> Odense, DK · UTC+1</span>
+          <span>~2 years of professional experience</span>
+          <span>Previously: Sonrisa · CodeSpring · Webapix</span>
         </motion.div>
       </div>
     </section>

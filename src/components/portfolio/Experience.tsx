@@ -3,45 +3,47 @@ import { SectionHeader } from "./SectionHeader";
 
 const roles = [
   {
-    company: "Lattice",
-    role: "Staff Software Engineer, Platform",
-    period: "2023 — Present",
-    location: "Remote",
+    company: "University of Southern Denmark (SDU)",
+    role: "MSc Software Engineering · w/ CompuSoft A/S",
+    period: "2023 — 2026",
+    location: "Odense, DK",
     outcomes: [
-      "Led realtime collaboration rebuild; 94% p95 latency reduction across the product",
-      "Owned platform roadmap for 40+ engineers across 6 product teams",
-      "Hired and ramped 7 senior engineers; introduced the company's IC ladder",
+      "Focus on Big Data, GCP cloud, microservices and event-driven design",
+      "Team projects across the full software-development lifecycle and reliability practices",
+      "Thesis: Data-Driven Decision Support for Campsites and Resorts — AI-based pricing & revenue optimization (with CompuSoft A/S)",
     ],
   },
   {
-    company: "Stripe",
-    role: "Senior Engineer, Acquiring",
-    period: "2020 — 2023",
-    location: "New York, NY",
+    company: "Sonrisa",
+    role: "Software Engineer",
+    period: "2022 — 2024",
+    location: "Hybrid · EU",
     outcomes: [
-      "Rewrote checkout SDK on edge runtime; +11.4% global conversion lift",
-      "Tech-led migration of 14k+ merchant integrations with zero downtime",
-      "Co-authored RFC for streaming payment-method orchestration (still in use)",
+      "Delivered first-phase MVP within 5 months on a Spring Boot + Angular stack",
+      "Drove critical modules to 100% unit-test coverage using JUnit and Mockito",
+      "Built REST endpoints and Angular components used by European clients; shipped on a two-week Scrum cadence",
+      "Rewrote a high-security, high-availability Hungarian government backend in Spring Boot, reusing legacy services to preserve functionality and improve efficiency",
     ],
   },
   {
-    company: "Vercel",
-    role: "Engineering contractor",
-    period: "2019 — 2020",
-    location: "Remote",
+    company: "Webapix · WebGurus · CodeSpring",
+    role: "Full-stack Intern",
+    period: "2021 — 2022",
+    location: "Transylvania, RO",
     outcomes: [
-      "Shipped Edge Middleware DX surface from prototype to GA",
-      "Authored migration guides adopted by 3k+ teams in first quarter",
+      "Built Laravel APIs and a small data-collection pipeline that automated web scraping and saved engineer hours",
+      "Shipped Vue / TypeScript components for a time-tracking app with OAuth 2.0 and lazy loading",
+      "Contributed animated frontend design to make internal tools more usable",
     ],
   },
   {
-    company: "Independent",
-    role: "Engineering consultant",
-    period: "2016 — 2019",
-    location: "Buenos Aires → NYC",
+    company: "Sapientia Hungarian University of Transylvania · Erasmus at ELTE",
+    role: "BSc Information Technologies",
+    period: "2019 — 2022",
+    location: "Romania → Hungary",
     outcomes: [
-      "Series A→B technical advisory for 4 venture-backed startups",
-      "Embedded engineer on early teams at two YC companies (one acquired)",
+      "Coursework: OOP, data structures & algorithms, AI, databases, distributed and mobile development",
+      "Thesis: Native time-management application built in Kotlin",
     ],
   },
 ];
@@ -50,7 +52,7 @@ export const Experience = () => (
   <section id="experience" className="container py-32">
     <SectionHeader
       eyebrow="Experience"
-      title={<>A decade of <em className="italic text-gradient font-light">shipping</em>.</>}
+      title={<>Professional and <em className="italic text-gradient font-light">academic</em> path.</>}
     />
 
     <div className="relative">

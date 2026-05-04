@@ -6,7 +6,7 @@ export const About = () => (
   <section id="about" className="container py-32">
     <SectionHeader
       eyebrow="About"
-      title={<>Engineering as a <em className="italic text-gradient font-light">product</em> discipline.</>}
+      title={<>Engineering as a <em className="italic text-gradient font-light">craft</em>, learned in public.</>}
     />
 
     <div className="grid md:grid-cols-12 gap-10 items-start">
@@ -20,7 +20,7 @@ export const About = () => (
         <div className="relative rounded-3xl overflow-hidden glass aspect-[4/5]">
           <img
             src={portrait}
-            alt="Portrait of Alex Rivera"
+            alt="Portrait of Botond Füzi"
             width={1024}
             height={1280}
             loading="lazy"
@@ -29,8 +29,8 @@ export const About = () => (
           <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
           <div className="absolute bottom-6 left-6 right-6 flex items-end justify-between">
             <div>
-              <div className="font-display text-2xl">Alex Rivera</div>
-              <div className="font-mono text-xs text-muted-foreground mt-1">b. Buenos Aires · based in Brooklyn</div>
+              <div className="font-display text-2xl">Botond Füzi</div>
+              <div className="font-mono text-xs text-muted-foreground mt-1">Transylvania → Odense, DK</div>
             </div>
             <div className="font-mono text-xs text-primary">2026</div>
           </div>
@@ -45,31 +45,32 @@ export const About = () => (
         className="md:col-span-7 space-y-6 text-lg leading-relaxed text-muted-foreground"
       >
         <p>
-          I write software that has to work — under load, on flaky networks, at 3am during an
-          incident. After a decade across infrastructure, payments and developer tooling, I've
-          learned that the interesting problems sit in the seams: where systems meet humans,
-          and where engineering decisions become product decisions.
+          I'm a software engineer with around <span className="text-foreground">two years of professional
+          experience</span> building Java/Spring Boot backends and Angular frontends — most recently at
+          Sonrisa, where I shipped customer features for European clients and helped rewrite a
+          high-availability legacy backend used by the Hungarian government.
         </p>
         <p>
-          My work tends to look the same shape regardless of stack: <span className="text-foreground">find the constraint</span>,
-          design around it, instrument honestly, ship the smallest thing that proves the next
-          decision. I care about clarity in code reviews, calm in postmortems, and shipping on
-          a Friday only when I'm certain.
+          I'm finishing my <span className="text-foreground">MSc in Software Engineering at SDU</span> in
+          Denmark, in collaboration with CompuSoft A/S. My thesis is on AI-based pricing and revenue
+          optimization for campsites and resorts — equal parts data engineering, modeling, and
+          designing a UI that domain experts actually trust.
         </p>
         <p>
-          I'm currently exploring opportunities at the intersection of <span className="text-foreground">developer platforms,
-          AI infrastructure, and crafted product surfaces</span>. Open to staff IC and
-          engineering manager tracks at companies that take craft seriously.
+          I care about <span className="text-foreground">clean code, honest tests, and learning from
+          feedback</span>. I bring three languages to the team room (Hungarian, English, Romanian),
+          basic German, and I'm currently learning Danish. Looking for graduate or junior roles
+          where I can grow next to senior engineers who take craft seriously.
         </p>
 
         <div className="grid grid-cols-2 gap-6 pt-8">
           <div className="glass rounded-2xl p-5">
-            <div className="font-display text-3xl text-gradient">10+</div>
+            <div className="font-display text-3xl text-gradient">~2</div>
             <div className="text-sm text-muted-foreground mt-1">Years shipping production software</div>
           </div>
           <div className="glass rounded-2xl p-5">
-            <div className="font-display text-3xl text-gradient">4</div>
-            <div className="text-sm text-muted-foreground mt-1">Engineering teams led to date</div>
+            <div className="font-display text-3xl text-gradient">MSc</div>
+            <div className="text-sm text-muted-foreground mt-1">Software Engineering · SDU (2026)</div>
           </div>
         </div>
       </motion.div>

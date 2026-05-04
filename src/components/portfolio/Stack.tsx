@@ -3,12 +3,12 @@ import { Code2, Database, Cloud, Wrench, Brain, Layers } from "lucide-react";
 import { SectionHeader } from "./SectionHeader";
 
 const groups = [
-  { icon: Code2, title: "Frontend", note: "Crafted product surfaces", items: ["TypeScript", "React / Next.js", "Tailwind", "Framer Motion", "WebGL / Three.js"] },
-  { icon: Layers, title: "Backend", note: "APIs and services", items: ["Go", "Rust", "Node.js", "Python", "GraphQL / gRPC"] },
-  { icon: Database, title: "Data", note: "Storage and streams", items: ["PostgreSQL", "Kafka / Flink", "Iceberg", "ClickHouse", "Redis"] },
-  { icon: Cloud, title: "Cloud & Infra", note: "Production at scale", items: ["AWS", "Cloudflare", "Kubernetes", "Terraform", "OpenTelemetry"] },
-  { icon: Brain, title: "ML & AI", note: "Pragmatic shipping", items: ["PyTorch", "vLLM", "LangGraph", "Embeddings", "Eval pipelines"] },
-  { icon: Wrench, title: "Practice", note: "How I work", items: ["RFC-driven design", "Incident reviews", "SLO ownership", "Mentorship", "Hiring loops"] },
+  { icon: Layers, title: "Backend", note: "What I reach for first", items: ["Java", "Spring Boot", "REST APIs", "JPA / Hibernate", "ASP.NET Core (C#)"] },
+  { icon: Code2, title: "Frontend", note: "Product surfaces", items: ["Angular", "TypeScript", "HTML / CSS", "Vue (past projects)"] },
+  { icon: Database, title: "Data & storage", note: "Persistence and analytics", items: ["MySQL", "MSSQL", "MongoDB", "pandas / dask", "Dash · AnyChart"] },
+  { icon: Cloud, title: "DevOps & infra", note: "Shipping and running it", items: ["Docker", "Kubernetes", "GitHub Actions", "Kafka", "GCP"] },
+  { icon: Brain, title: "AI & ML", note: "Pragmatic, applied", items: ["scikit-learn", "OpenAI API", "Hugging Face", "Cursor / Claude / ChatGPT"] },
+  { icon: Wrench, title: "Practice", note: "How I work", items: ["JUnit · Mockito · Postman", "Agile / Scrum", "Code review & ownership", "Clear documentation", "Continuous learning"] },
 ];
 
 export const Stack = () => (
