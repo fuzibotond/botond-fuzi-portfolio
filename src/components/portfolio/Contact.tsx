@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
-import { ArrowUpRight, Github, Linkedin, Mail, Twitter } from "lucide-react";
+import { ArrowUpRight, Github, Instagram, Linkedin, Mail } from "lucide-react";
 
 const socials = [
-  { label: "Email", value: "hello@alexrivera.dev", href: "mailto:hello@alexrivera.dev", icon: Mail },
-  { label: "GitHub", value: "github.com/alexrivera", href: "https://github.com", icon: Github },
-  { label: "LinkedIn", value: "in/alexrivera", href: "https://linkedin.com", icon: Linkedin },
-  { label: "X / Twitter", value: "@alexrivera", href: "https://x.com", icon: Twitter },
+  { label: "Email", value: "botond.fuzi.dev@gmail.com", href: "mailto:botond.fuzi.dev@gmail.com", icon: Mail },
+  { label: "GitHub", value: "github.com/fuzibotond", href: "https://github.com/fuzibotond", icon: Github },
+  { label: "LinkedIn", value: "in/botond-fuzi", href: "https://www.linkedin.com/in/botond-fuzi/", icon: Linkedin },
+  { label: "Instagram", value: "@botond.fuzi", href: "https://www.instagram.com/botond.fuzi/", icon: Instagram },
 ];
 
 export const Contact = () => (
@@ -27,29 +27,29 @@ export const Contact = () => (
         </div>
 
         <h2 className="font-display text-5xl md:text-7xl tracking-tight leading-[1] max-w-4xl">
-          Have a hard problem?
+          Have a problem worth solving?
           <br />
           <em className="italic text-gradient font-light">Let's talk about it.</em>
         </h2>
 
         <p className="mt-8 max-w-xl text-muted-foreground text-lg leading-relaxed">
-          I read every message. Best for senior IC roles, fractional engineering leadership, or
-          a focused 2–6 week engagement on something genuinely difficult.
+          I read every message. Best for graduate / junior software engineering roles, thesis-related
+          collaboration, or interesting side projects in Java, Spring Boot, Angular or applied ML.
         </p>
 
         <div className="mt-12 flex flex-wrap gap-3">
           <a
-            href="mailto:hello@alexrivera.dev"
+            href="mailto:botond.fuzi.dev@gmail.com"
             className="group inline-flex items-center gap-3 px-6 py-4 rounded-full bg-foreground text-background font-medium hover:bg-primary hover:text-primary-foreground transition-colors"
           >
-            hello@alexrivera.dev
+            botond.fuzi.dev@gmail.com
             <ArrowUpRight className="w-4 h-4 transition-transform group-hover:rotate-45" />
           </a>
           <a
-            href="/resume.pdf"
+            href="tel:+4571496675"
             className="inline-flex items-center gap-2 px-6 py-4 rounded-full glass font-medium hover:border-primary/40 transition-colors"
           >
-            Download CV
+            +45 71 49 66 75
           </a>
         </div>
 
@@ -78,10 +78,10 @@ export const Contact = () => (
     </motion.div>
 
     <footer className="mt-20 flex flex-col md:flex-row items-center justify-between gap-4 text-xs font-mono text-muted-foreground">
-      <div>© 2026 Alex Rivera · Built from scratch in Brooklyn</div>
+      <div>© 2026 Botond Füzi · Built from scratch in Odense</div>
       <div className="flex items-center gap-2">
         <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-        Available for new work · Q3 2026
+        Open to new roles · 2026
       </div>
     </footer>
   </section>

@@ -6,6 +6,7 @@ const links = [
   { id: "about", label: "About" },
   { id: "stack", label: "Stack" },
   { id: "experience", label: "Experience" },
+  { id: "writing", label: "Writing" },
   { id: "contact", label: "Contact" },
 ];
 
@@ -45,7 +46,7 @@ export const Nav = () => {
         }`}
       >
         <a href="#top" className="font-display text-sm pl-4 pr-3 tracking-tight">
-          ar<span className="text-primary">.</span>
+          bf<span className="text-primary">.</span>
         </a>
         <span className="hidden sm:block w-px h-5 bg-border" />
         <ul className="hidden sm:flex items-center gap-1">
