@@ -26,26 +26,60 @@ const roles = [
     ],
   },
   {
-    company: "Webapix · WebGurus · CodeSpring",
-    role: "Full-stack Intern",
-    period: "2021 — 2022",
-    location: "Transylvania, RO",
-    outcomes: [
-      "Built Laravel APIs and a small data-collection pipeline that automated web scraping and saved engineer hours",
-      "Shipped Vue / TypeScript components for a time-tracking app with OAuth 2.0 and lazy loading",
-      "Contributed animated frontend design to make internal tools more usable",
-    ],
-  },
+  company: "WebApix",
+  role: "Full-stack Intern",
+  period: "2022",
+  location: "Budapest, HU",
+  outcomes: [
+    "Developed PHP-based data collection and web-scraping solutions to reduce manual work",
+    "Worked on multiple client projects using Laravel and Vue",
+    "Improved internal tools with interactive UI components and lightweight animations",
+  ],
+},
   {
-    company: "Sapientia Hungarian University of Transylvania · Erasmus at ELTE",
-    role: "BSc Information Technologies",
-    period: "2019 — 2022",
-    location: "Romania → Hungary",
-    outcomes: [
-      "Coursework: OOP, data structures & algorithms, AI, databases, distributed and mobile development",
-      "Thesis: Native time-management application built in Kotlin",
-    ],
-  },
+  company: "CodeSpring",
+  role: "Backend Trainee",
+  period: "2021 — 2022",
+  location: "Transylvania, RO",
+  outcomes: [
+    "Completed a 2-week intensive training in Java covering OOP, Spring Boot, and Hibernate",
+    "Attended additional .NET and C# training sessions across multiple occasions",
+    "Built small practice applications to strengthen backend fundamentals and architecture understanding",
+  ],
+},
+{
+  company: "WebGurus",
+  role: "Full-stack Intern",
+  period: "2021",
+  location: "Székelyudvarhely, RO",
+  outcomes: [
+    "Developed a time-tracking web application using Laravel and Vue in a team of 5",
+    "Built backend APIs for time logging and user management",
+    "Implemented frontend components with Vue and TypeScript, including OAuth 2.0 authentication",
+  ],
+},
+{
+  company: "Eötvös Loránd University (ELTE)",
+  role: "Erasmus Exchange Student",
+  period: "2022",
+  location: "Budapest, Hungary",
+  outcomes: [
+    "Participated in Erasmus exchange program focusing on software engineering and computer science courses",
+    "Collaborated in an international academic environment",
+    "Expanded knowledge in modern development practices and cross-cultural teamwork",
+  ],
+},
+  {
+  company: "Sapientia Hungarian University of Transylvania",
+  role: "BSc Information Technologies",
+  period: "2019 — 2022",
+  location: "Romania",
+  outcomes: [
+    "Studied core computer science subjects including OOP, data structures & algorithms, databases, AI, and distributed systems",
+    "Built a strong foundation in software engineering and backend development principles",
+    "Thesis: Developed a native time-management mobile application using Kotlin",
+  ],
+}
 ];
 
 export const Experience = () => (

@@ -36,29 +36,30 @@ const projects: Project[] = [
     accent: "from-primary/30 to-transparent",
   },
   {
-    index: "02",
-    year: "2022–2024",
-    title: "Customer-facing platform rebuild",
-    client: "Sonrisa — Software Engineer",
-    problem:
-      "The product needed a faster delivery cadence and a more reliable backend while still serving European clients without regressions. Existing flows had thin test coverage and unclear ownership between backend and frontend.",
-    decisions: [
-      "Owned features end-to-end across Spring Boot REST APIs and Angular components",
-      "Brought critical modules to 100% unit-test coverage with JUnit + Mockito",
-      "Shipped on a two-week Scrum cadence with QA/PM, documenting features for clients and internal use",
-    ],
-    stack: ["Java", "Spring Boot", "Angular", "TypeScript", "JUnit", "Mockito"],
-    outcome: [
-      { metric: "5 mo", label: "MVP delivered (phase 1)" },
-      { metric: "100%", label: "coverage on critical modules" },
-      { metric: "2-wk", label: "release cadence" },
-    ],
-    accent: "from-accent/30 to-transparent",
-  },
+  index: "02",
+  year: "2022–2024",
+  title: "Internal device configuration platform",
+  client: "Sonrisa — Software Engineer",
+  problem:
+    "The company lacked a centralized system to manage and update configurations for their grain measuring devices. Configuration changes were handled manually across multiple systems, leading to inconsistencies, slow rollout times, and a high risk of errors in production devices.",
+  decisions: [
+    "Developed backend features using Java 21 and Spring Boot, ensuring reliable APIs for device configuration management",
+    "Contributed to Angular frontend components and RxJS flows to support cross-functional delivery",
+    "Collaborated closely with senior engineers, QA, and product owner in a team of 8 to align on requirements and best practices",
+    "Worked in a two-week Scrum cadence with regular planning and retrospective meetings",
+  ],
+  stack: ["Java", "Spring Boot", "Angular", "TypeScript", "RxJS"],
+  outcome: [
+    { metric: "2-wk", label: "Sprint delivery cycle" },
+    { metric: "8 ppl", label: "Cross-functional team" },
+    { metric: "Full", label: "Centralized device configuration system" },
+  ],
+  accent: "from-accent/30 to-transparent",
+},
   {
     index: "03",
     year: "2023–2024",
-    title: "Government legacy backend rewrite",
+    title: "Legacy backend rewrite",
     client: "Sonrisa — Hungarian gov't project",
     problem:
       "A high-security, high-availability legacy system needed to be modernized without breaking the contracts existing services depended on. The team had to maintain functionality bit-for-bit while improving the runtime characteristics.",
@@ -67,7 +68,7 @@ const projects: Project[] = [
       "Mapped existing behavior into integration tests before any rewrite to prevent silent regressions",
       "Tightened request handling and persistence to improve response times under load",
     ],
-    stack: ["Java", "Spring Boot", "JPA/Hibernate", "MySQL", "Docker"],
+    stack: ["Java", "Spring Boot", "MySQL", "Docker", "Wicket"],
     outcome: [
       { metric: "0", label: "regressions on rollout" },
       { metric: "↑", label: "system efficiency" },
@@ -76,25 +77,68 @@ const projects: Project[] = [
     accent: "from-violet-500/30 to-transparent",
   },
   {
-    index: "04",
-    year: "2021–2022",
-    title: "Data-collection pipeline & time-tracking app",
-    client: "Webapix · WebGurus · CodeSpring — Intern",
-    problem:
-      "Two parallel internships: one team needed to stop manually collecting competitive data; another needed a small but production-grade time-tracking tool with proper auth and a snappy UX.",
-    decisions: [
-      "Built Laravel APIs and an automated web-scraping pipeline that removed hours of manual work per week",
-      "Shipped Vue/TypeScript components for the time-tracking app with OAuth 2.0 and lazy loading",
-      "Added animated frontend touches that made the data tool actually pleasant for non-engineers to use",
-    ],
-    stack: ["Laravel", "PHP", "Vue", "TypeScript", "OAuth 2.0"],
-    outcome: [
-      { metric: "hrs/wk", label: "manual work eliminated" },
-      { metric: "OAuth", label: "secure auth flow" },
-      { metric: "2", label: "production internships" },
-    ],
-    accent: "from-emerald-500/30 to-transparent",
-  },
+  index: "04",
+  year: "2021",
+  title: "Time-tracking web application",
+  client: "WebGurus — Intern",
+  problem:
+    "The team needed a simple but production-ready time-tracking tool for internal use, with secure authentication and a responsive user experience for daily logging.",
+  decisions: [
+    "Built backend features using Laravel and PHP for time tracking and user management",
+    "Developed Vue.js components with TypeScript to create a responsive and user-friendly interface",
+    "Implemented OAuth 2.0 authentication for secure access",
+    "Collaborated in a team of 5 developers during a 2-month internship",
+  ],
+  stack: ["Laravel", "PHP", "Vue", "TypeScript", "OAuth 2.0"],
+  outcome: [
+    { metric: "2 mo", label: "internship duration" },
+    { metric: "5 ppl", label: "team collaboration" },
+    { metric: "MVP", label: "functional time-tracking system" },
+  ],
+  accent: "from-emerald-500/30 to-transparent",
+},
+{
+  index: "05",
+  year: "2022",
+  title: "Data collection & web-scraping automation",
+  client: "WebApix — Intern",
+  problem:
+    "The company relied on manual collection of competitor and market data, which was time-consuming, repetitive, and prone to human error.",
+  decisions: [
+    "Developed PHP-based scripts and Laravel APIs to automate data collection workflows",
+    "Built web-scraping solutions to gather structured data from external sources",
+    "Created Vue.js components and added UI animations to improve usability for non-technical users",
+    "Worked on multiple client-facing projects during a 4-month internship",
+  ],
+  stack: ["PHP", "Laravel", "Vue", "JavaScript", "Web Scraping"],
+  outcome: [
+    { metric: "4 mo", label: "internship duration" },
+    { metric: "hrs/wk", label: "manual work reduced" },
+    { metric: "multi", label: "projects delivered" },
+  ],
+  accent: "from-emerald-500/30 to-transparent",
+},
+{
+  index: "06",
+  year: "2021–2022",
+  title: "Backend & OOP intensive training",
+  client: "CodeSpring — Trainee",
+  problem:
+    "Accelerate practical backend development skills and gain hands-on experience with modern frameworks and object-oriented programming.",
+  decisions: [
+    "Completed a 2-week intensive course covering OOP, Spring Boot, and Hibernate (2021)",
+    "Attended additional .NET and C# training sessions across 4 occasions (2022)",
+    "Built small practice applications to reinforce backend concepts and architecture patterns",
+  ],
+  stack: ["Java", "Spring Boot", "Hibernate", "C#", ".NET"],
+  outcome: [
+    { metric: "2 wk", label: "Java bootcamp" },
+    { metric: "4x", label: ".NET sessions" },
+    { metric: "core", label: "backend foundations built" },
+  ],
+  accent: "from-emerald-500/30 to-transparent",
+},
+
 ];
 
 export const Projects = () => (

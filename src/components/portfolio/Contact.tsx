@@ -34,7 +34,7 @@ export const Contact = () => (
 
         <p className="mt-8 max-w-xl text-muted-foreground text-lg leading-relaxed">
           I read every message. Best for graduate / junior software engineering roles, thesis-related
-          collaboration, or interesting side projects in Java, Spring Boot, Angular or applied ML.
+          collaboration, or interesting side projects in Java, Spring Boot, Angular or AI.
         </p>
 
         <div className="mt-12 flex flex-wrap gap-3">
@@ -45,12 +45,7 @@ export const Contact = () => (
             botond.fuzi.dev@gmail.com
             <ArrowUpRight className="w-4 h-4 transition-transform group-hover:rotate-45" />
           </a>
-          <a
-            href="tel:+4571496675"
-            className="inline-flex items-center gap-2 px-6 py-4 rounded-full glass font-medium hover:border-primary/40 transition-colors"
-          >
-            +45 71 49 66 75
-          </a>
+          
         </div>
 
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4">
