@@ -36,35 +36,42 @@ export const Hero = () => {
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-60" />
             <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-400" />
           </span>
-          Open to graduate &amp; junior software engineer roles · 2026
+          Open to software engineering roles · Backend · Full-stack · AI products
         </motion.div>
 
-        <h1 className="font-display text-[clamp(2.75rem,9vw,8.5rem)] leading-[0.95] tracking-tight max-w-[18ch]">
-          <motion.span
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
-            className="block"
-          >
-            Building <em className="italic text-gradient font-light">pragmatic</em>
-          </motion.span>
-          <motion.span
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.9, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-            className="block"
-          >
-            backends and
-          </motion.span>
-          <motion.span
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.9, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-            className="block"
-          >
-            data-driven products.
-          </motion.span>
-        </h1>
+<h1 className="font-display text-[clamp(2.5rem,7.5vw,7rem)] leading-[0.95] tracking-tight max-w-[15ch] pr-6 md:pr-10">  <motion.span
+    initial={{ opacity: 0, y: 30 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
+    className="block"
+  >
+    Turning{" "}
+    <em className="inline-block italic text-gradient font-light pr-2">
+  complex
+</em>
+  </motion.span>
+
+  <motion.span
+    initial={{ opacity: 0, y: 30 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.9, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+    className="block"
+  >
+    problems into
+  </motion.span>
+
+  <motion.span
+    initial={{ opacity: 0, y: 30 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.9, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+    className="block"
+  >
+    scalable{" "}
+    <em className="inline-block italic text-gradient font-light pr-2">
+  solutions
+</em>.
+  </motion.span>
+</h1>
 
         <motion.div
           initial={{ opacity: 0 }}
@@ -73,11 +80,14 @@ export const Hero = () => {
           className="mt-12 grid md:grid-cols-[1fr_auto] gap-8 items-end"
         >
           <p className="max-w-xl text-base md:text-lg text-muted-foreground leading-relaxed">
-            I'm <span className="text-foreground">Botond Füzi</span>, a software engineer working with{" "}
-            <span className="text-foreground">Java, Spring Boot and Angular</span>. Currently finishing
-            my MSc in Software Engineering at <span className="text-foreground">SDU</span>, with a
-            thesis on AI-based pricing and revenue optimization in collaboration with CompuSoft A/S.
-          </p>
+  I'm <span className="text-foreground">Botond Füzi</span>, a software engineer with an{" "}
+  <span className="text-foreground">MSc in Software Engineering from SDU</span> and hands-on
+  experience building backend and full-stack systems with{" "}
+  <span className="text-foreground">Java, Spring Boot, Angular and Python</span>.
+  I'm especially interested in <span className="text-foreground">AI-powered products, agents,
+  automation and data-driven systems</span> — while still enjoying the craft of clean,
+  reliable general-purpose programming.
+</p>
 
           <div className="flex flex-col sm:flex-row gap-3">
             <a

@@ -47,12 +47,12 @@ export const About = () => (
         <p>
           I'm a software engineer with around <span className="text-foreground">two years of professional
           experience</span> building Java/Spring Boot backends and Angular frontends — most recently at
-          Sonrisa, where I shipped customer features for European clients and helped rewrite a
-          high-availability legacy backend used by the Hungarian government.
+          Sonrisa, where I shipped customer features for clients and helped rewrite a
+          high-availability backend.
         </p>
         <p>
-          I'm finishing my <span className="text-foreground">MSc in Software Engineering at SDU</span> in
-          Denmark, in collaboration with CompuSoft A/S. My thesis is on AI-based pricing and revenue
+          I finished my <span className="text-foreground">MSc in Software Engineering at SDU</span> in
+          Denmark, in collaboration with CompuSoft A/S. My thesis was on AI-based pricing and revenue
           optimization for campsites and resorts — equal parts data engineering, modeling, and
           designing a UI that domain experts actually trust.
         </p>
