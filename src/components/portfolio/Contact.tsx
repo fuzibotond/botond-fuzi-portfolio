@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight, Github, Instagram, Linkedin, Mail } from "lucide-react";
+import { EVENTS, track } from "@/lib/analytics";
 
 const socials = [
   { label: "Email", value: "botond.fuzi.dev@gmail.com", href: "mailto:botond.fuzi.dev@gmail.com", icon: Mail },
@@ -40,6 +41,7 @@ export const Contact = () => (
         <div className="mt-12 flex flex-wrap gap-3">
           <a
             href="mailto:botond.fuzi.dev@gmail.com"
+            onClick={() => track(EVENTS.contactEmailClick)}
             className="group inline-flex items-center gap-3 px-6 py-4 rounded-full bg-foreground text-background font-medium hover:bg-primary hover:text-primary-foreground transition-colors"
           >
             botond.fuzi.dev@gmail.com

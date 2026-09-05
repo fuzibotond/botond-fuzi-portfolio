@@ -1,14 +1,5 @@
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: Twitterbot
-Allow: /
-
-User-agent: facebookexternalhit
-Allow: /
-
+# https://botondfuzi.com
 User-agent: *
 Allow: /
+
+Sitemap: https://botondfuzi.com/sitemap.xml

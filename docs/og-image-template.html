@@ -1,0 +1,54 @@
+<!doctype html>
+<!--
+  Open Graph / social share image template for botondfuzi.com
+  ============================================================
+  The site references https://botondfuzi.com/og.png (1200 x 630) in its
+  social metadata, but that PNG does not exist yet. Create it once:
+
+  Fastest (this file):
+    1. Open this file in a browser at exactly 1200 x 630.
+    2. Screenshot just the card (it fills the viewport at that size).
+    3. Save the screenshot as  public/og.png  (1200 x 630 PNG, < 1 MB).
+    4. Commit and redeploy. Re-run share debuggers (see the report).
+
+  Alternative: recreate this layout in Figma/Canva at 1200 x 630 and export PNG.
+
+  Content is intentionally on-brand with the dark site theme. Keep the name,
+  role and location; do not add claims that aren't on the site.
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=JetBrains+Mono:wght@500&display=swap");
+      html, body { margin: 0; }
+      .card {
+        width: 1200px; height: 630px; box-sizing: border-box;
+        background: radial-gradient(120% 120% at 100% 0%, #12351f 0%, #0b0d10 55%);
+        color: #e7e9ea; padding: 80px; display: flex; flex-direction: column;
+        justify-content: space-between; font-family: Fraunces, Georgia, serif;
+      }
+      .kicker {
+        font-family: "JetBrains Mono", monospace; font-size: 22px;
+        letter-spacing: .25em; text-transform: uppercase; color: #6ee7b7;
+      }
+      h1 { font-size: 84px; line-height: 1.02; font-weight: 500; margin: 0; max-width: 15ch; }
+      .grad { color: #6ee7b7; font-style: italic; font-weight: 400; }
+      .row {
+        font-family: "JetBrains Mono", monospace; font-size: 24px; color: #9aa0a6;
+        display: flex; gap: 28px; align-items: center;
+      }
+      .dot { width: 8px; height: 8px; border-radius: 50%; background: #6ee7b7; display: inline-block; }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="kicker">Botond Füzi — Odense, Denmark</div>
+      <h1>Reliable backend, full-stack &amp; <span class="grad">AI-enabled</span> software.</h1>
+      <div class="row">
+        <span><span class="dot"></span> Software Engineer</span>
+        <span>Java · Spring Boot · Angular · Python</span>
+      </div>
+    </div>
+  </body>
+</html>
