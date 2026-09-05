@@ -1,6 +1,8 @@
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { ArrowUpRight, MapPin } from "lucide-react";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
+import { EVENTS, track } from "@/lib/analytics";
 
 export const Hero = () => {
   const mx = useMotionValue(0);
@@ -39,15 +41,19 @@ export const Hero = () => {
           Open to software engineering roles · Backend · Full-stack · AI products
         </motion.div>
 
-<h1 className="font-display text-[clamp(2.5rem,7.5vw,7rem)] leading-[0.95] tracking-tight max-w-[15ch] pr-6 md:pr-10">  <motion.span
+<h1 className="font-display text-[clamp(2.5rem,7.5vw,7rem)] leading-[0.95] tracking-tight max-w-[15ch] pr-6 md:pr-10">
+  <span className="block font-mono text-xs md:text-sm font-normal tracking-normal text-muted-foreground mb-5">
+    Botond Füzi — Software Engineer in Denmark
+  </span>
+  <motion.span
     initial={{ opacity: 0, y: 30 }}
     animate={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
     className="block"
   >
-    Turning{" "}
+    I build{" "}
     <em className="inline-block italic text-gradient font-light pr-2">
-  complex
+  reliable
 </em>
   </motion.span>
 
@@ -57,7 +63,7 @@ export const Hero = () => {
     transition={{ duration: 0.9, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
     className="block"
   >
-    problems into
+    backend, full-stack &amp;
   </motion.span>
 
   <motion.span
@@ -66,10 +72,10 @@ export const Hero = () => {
     transition={{ duration: 0.9, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
     className="block"
   >
-    scalable{" "}
     <em className="inline-block italic text-gradient font-light pr-2">
-  solutions
-</em>.
+  AI-enabled
+</em>
+    software.
   </motion.span>
 </h1>
 
@@ -89,20 +95,29 @@ export const Hero = () => {
   reliable general-purpose programming.
 </p>
 
-          <div className="flex flex-col sm:flex-row gap-3">
-            <a
-              href="#work"
-              className="group inline-flex items-center justify-between gap-6 px-5 py-3 rounded-full bg-foreground text-background text-sm font-medium hover:bg-primary hover:text-primary-foreground transition-colors"
-            >
-              View selected work
-              <ArrowUpRight className="w-4 h-4 transition-transform group-hover:rotate-45" />
-            </a>
-            <a
-              href="#contact"
-              className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full glass text-sm font-medium hover:border-primary/40 transition-colors"
-            >
-              Get in touch
-            </a>
+          <div className="flex flex-col gap-3">
+            <div className="flex flex-col sm:flex-row gap-3">
+              <Link
+                to="/software-engineer"
+                onClick={() => track(EVENTS.hireEngineerCta, { location: "hero" })}
+                className="group inline-flex items-center justify-between gap-6 px-5 py-3 rounded-full bg-foreground text-background text-sm font-medium hover:bg-primary hover:text-primary-foreground transition-colors"
+              >
+                Hire me as an engineer
+                <ArrowUpRight className="w-4 h-4 transition-transform group-hover:rotate-45" />
+              </Link>
+              <Link
+                to="/web-development"
+                onClick={() => track(EVENTS.webDevCta, { location: "hero" })}
+                className="group inline-flex items-center justify-between gap-6 px-5 py-3 rounded-full glass text-sm font-medium hover:border-primary/40 transition-colors"
+              >
+                Build a website for my business
+                <ArrowUpRight className="w-4 h-4 transition-transform group-hover:rotate-45" />
+              </Link>
+            </div>
+            <div className="flex items-center gap-5 text-xs text-muted-foreground pl-1">
+              <a href="#work" className="hover:text-foreground transition-colors">View selected work →</a>
+              <a href="#contact" className="hover:text-foreground transition-colors">Contact</a>
+            </div>
           </div>
         </motion.div>
 

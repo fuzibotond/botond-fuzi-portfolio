@@ -1,21 +1,23 @@
 {
-  "name": "MyWebSite",
-  "short_name": "MySite",
+  "name": "Botond Füzi — Software Engineer",
+  "short_name": "Botond Füzi",
+  "description": "Software engineer in Odense, Denmark — backend, full-stack and AI-enabled software, plus web development for businesses.",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#0b0d10",
+  "background_color": "#0b0d10",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
-      "purpose": "maskable"
+      "purpose": "any"
     },
     {
       "src": "/web-app-manifest-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "maskable"
+      "purpose": "any maskable"
     }
-  ],
-  "theme_color": "#ffffff",
-  "background_color": "#ffffff",
-  "display": "standalone"
+  ]
 }

@@ -1,18 +1,25 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 
-const links = [
+// In-page sections (exist on the homepage).
+const sections = [
   { id: "work", label: "Work" },
   { id: "about", label: "About" },
   { id: "stack", label: "Stack" },
-  { id: "experience", label: "Experience" },
-  // { id: "writing", label: "Writing" },
-  { id: "contact", label: "Contact" },
+];
+
+// Dedicated routes (distinct search intent + funnels).
+const routeLinks = [
+  { to: "/software-engineer", label: "Engineering" },
+  { to: "/web-development", label: "Web Development" },
 ];
 
 export const Nav = () => {
   const [scrolled, setScrolled] = useState(false);
   const [active, setActive] = useState("work");
+  const { pathname } = useLocation();
+  const onHome = pathname === "/";
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -22,16 +29,19 @@ export const Nav = () => {
   }, []);
 
   useEffect(() => {
+    if (!onHome) return;
     const obs = new IntersectionObserver(
       (entries) => entries.forEach((e) => e.isIntersecting && setActive(e.target.id)),
       { rootMargin: "-40% 0px -55% 0px" }
     );
-    links.forEach((l) => {
+    sections.forEach((l) => {
       const el = document.getElementById(l.id);
       if (el) obs.observe(el);
     });
     return () => obs.disconnect();
-  }, []);
+  }, [onHome]);
+
+  const sectionHref = (id: string) => (onHome ? `#${id}` : `/#${id}`);
 
   return (
     <motion.header
@@ -41,24 +51,40 @@ export const Nav = () => {
       className="fixed top-0 inset-x-0 z-50 flex justify-center pt-4 px-4"
     >
       <nav
+        aria-label="Primary"
         className={`glass rounded-full px-2 py-2 flex items-center gap-1 transition-all duration-500 ${
           scrolled ? "shadow-elevated scale-100" : "scale-[1.02]"
         }`}
       >
-        <a href="#top" className="font-display text-sm pl-4 pr-3 tracking-tight">
+        <Link to="/" className="font-display text-sm pl-4 pr-3 tracking-tight" aria-label="Botond Füzi — home">
           bf<span className="text-primary">.</span>
-        </a>
+        </Link>
         <span className="hidden sm:block w-px h-5 bg-border" />
         <ul className="hidden sm:flex items-center gap-1">
-          {links.map((l) => (
-            <li key={l.id}>
-              <a
-                href={`#${l.id}`}
+          {routeLinks.map((l) => (
+            <li key={l.to}>
+              <Link
+                to={l.to}
                 className={`relative px-3 py-1.5 text-xs font-medium rounded-full transition-colors ${
-                  active === l.id ? "text-foreground" : "text-muted-foreground hover:text-foreground"
+                  pathname === l.to ? "text-foreground" : "text-muted-foreground hover:text-foreground"
                 }`}
               >
-                {active === l.id && (
+                {pathname === l.to && (
+                  <span className="absolute inset-0 rounded-full bg-foreground/5 border border-foreground/10" />
+                )}
+                <span className="relative">{l.label}</span>
+              </Link>
+            </li>
+          ))}
+          {sections.map((l) => (
+            <li key={l.id}>
+              <a
+                href={sectionHref(l.id)}
+                className={`relative px-3 py-1.5 text-xs font-medium rounded-full transition-colors ${
+                  onHome && active === l.id ? "text-foreground" : "text-muted-foreground hover:text-foreground"
+                }`}
+              >
+                {onHome && active === l.id && (
                   <motion.span
                     layoutId="nav-pill"
                     className="absolute inset-0 rounded-full bg-foreground/5 border border-foreground/10"
@@ -71,7 +97,7 @@ export const Nav = () => {
           ))}
         </ul>
         <a
-          href="#contact"
+          href={sectionHref("contact")}
           className="ml-1 px-4 py-1.5 text-xs font-medium rounded-full bg-foreground text-background hover:bg-primary hover:text-primary-foreground transition-colors"
         >
           Get in touch
