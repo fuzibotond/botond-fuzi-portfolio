@@ -12,6 +12,10 @@ const ROUTES = [
   { path: "/", changefreq: "monthly", priority: "1.0" },
   { path: "/software-engineer", changefreq: "monthly", priority: "0.9" },
   { path: "/web-development", changefreq: "monthly", priority: "0.9" },
+  { path: "/work", changefreq: "monthly", priority: "0.8" },
+  { path: "/work/fyns-havehjaelp", changefreq: "yearly", priority: "0.7" },
+  { path: "/work/legume-cernat", changefreq: "yearly", priority: "0.7" },
+  { path: "/work/zol-oil", changefreq: "yearly", priority: "0.7" },
 ];
 
 const lastmod = new Date().toISOString().slice(0, 10);

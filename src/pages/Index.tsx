@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { ArrowUpRight } from "lucide-react";
 import { Hero } from "@/components/portfolio/Hero";
 import { Marquee } from "@/components/portfolio/Marquee";
+import { SelectedWork } from "@/components/portfolio/SelectedWork";
 import { Projects } from "@/components/portfolio/Projects";
 import { About } from "@/components/portfolio/About";
 import { Stack } from "@/components/portfolio/Stack";
@@ -31,6 +32,7 @@ const Index = () => {
       />
       <Hero />
       <Marquee />
+      <SelectedWork />
       <Projects />
       <About />
       <Stack />

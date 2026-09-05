@@ -106,6 +106,39 @@ export function breadcrumbSchema(items: { name: string; path: string }[]): JsonL
   };
 }
 
+/** CreativeWork schema for a website Botond built — states authorship without implying business ownership. */
+export function creativeWorkSchema(opts: {
+  name: string;
+  url: string;
+  description: string;
+  caseStudyPath: string;
+}): JsonLd {
+  return {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    name: opts.name,
+    url: opts.url,
+    description: opts.description,
+    creator: { "@id": `${SITE_URL}/#person` },
+    author: { "@id": `${SITE_URL}/#person` },
+    mainEntityOfPage: abs(opts.caseStudyPath),
+  };
+}
+
+/** ItemList schema for a collection page (e.g. /work). */
+export function itemListSchema(items: { name: string; path: string }[]): JsonLd {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    itemListElement: items.map((it, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: it.name,
+      url: abs(it.path),
+    })),
+  };
+}
+
 /** Service schema for the web-development offering (truthful: a freelance service, area-served, no fake ratings). */
 export function webDevServiceSchema(): JsonLd {
   return {

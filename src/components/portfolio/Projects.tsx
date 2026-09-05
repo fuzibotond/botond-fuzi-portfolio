@@ -144,9 +144,9 @@ const projects: Project[] = [
 export const Projects = () => (
   <section id="work" className="container py-32">
     <SectionHeader
-      eyebrow="Selected work"
-      title={<>Four projects, <em className="italic text-gradient font-light">honest</em> outcomes.</>}
-      description="A small sample of the work I can talk about. Each entry is structured around the problem, the engineering decisions, and what actually shipped."
+      eyebrow="Engineering projects"
+      title={<>Deeper <em className="italic text-gradient font-light">technical</em> work.</>}
+      description="Backend, full-stack and applied-ML projects from my professional and academic work. Each is structured around the problem, the engineering decisions, and what actually shipped."
     />
 
     <div className="space-y-6">
