@@ -4,7 +4,6 @@ import { Link, useLocation } from "react-router-dom";
 
 // In-page sections (exist on the homepage).
 const sections = [
-  { id: "work", label: "Work" },
   { id: "about", label: "About" },
   { id: "stack", label: "Stack" },
 ];
@@ -13,6 +12,7 @@ const sections = [
 const routeLinks = [
   { to: "/software-engineer", label: "Engineering" },
   { to: "/web-development", label: "Web Development" },
+  { to: "/work", label: "Work" },
 ];
 
 export const Nav = () => {

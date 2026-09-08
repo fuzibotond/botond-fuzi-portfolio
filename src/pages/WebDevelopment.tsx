@@ -10,6 +10,7 @@ import {
   Settings,
 } from "lucide-react";
 import { Contact } from "@/components/portfolio/Contact";
+import { SelectedWork } from "@/components/portfolio/SelectedWork";
 import { Seo } from "@/components/Seo";
 import { EVENTS, track } from "@/lib/analytics";
 import {
@@ -101,6 +102,11 @@ const WebDevelopment = () => {
             engineer based in Odense. Alongside my engineering work, I help small and medium-sized
             businesses across Denmark get a modern, fast website — or a custom web application built
             around how they really work. You deal directly with the person building it.
+          </p>
+          <p className="mt-4 max-w-2xl text-muted-foreground leading-relaxed">
+            This isn't theory: I build and manage production websites for real businesses. Recent
+            work includes sites for a local gardening service on Fyn, an agricultural wholesaler and
+            a car dealership — all live, and all maintained by me. You can see them below.
           </p>
 
           <div className="mt-10 flex flex-wrap gap-3">
@@ -204,6 +210,13 @@ const WebDevelopment = () => {
           ))}
         </div>
       </section>
+
+      {/* Selected business websites — real proof */}
+      <SelectedWork
+        eyebrow="Selected business websites"
+        title={<>Real sites, <em className="italic text-gradient font-light">already live</em>.</>}
+        description="Websites I built and maintain for real businesses. Visit them, or read the short case study for what I built and how it's run."
+      />
 
       {/* Why custom + proof */}
       <section className="container py-16">
