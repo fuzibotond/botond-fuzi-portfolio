@@ -125,7 +125,7 @@ export const Hero = () => {
         >
           <span className="flex items-center gap-1.5"><MapPin className="w-3 h-3" /> Odense, DK · UTC+1</span>
           <span>~2 years of professional experience</span>
-          <span>Previously: Sonrisa · CodeSpring · Webapix</span>
+          <span>Previously: Sonrisa · CompuSoft · Webapix</span>
         </motion.div>
       </div>
     </section>
