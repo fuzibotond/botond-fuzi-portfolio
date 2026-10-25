@@ -28,41 +28,41 @@ const services = [
   {
     icon: LayoutTemplate,
     title: "Business websites",
-    body: "A clear, modern website that loads fast, works on every phone, and tells customers what you do — built to be easy to update.",
+    body: "A clear, fast website that works on every phone and is easy to update.",
   },
   {
     icon: Settings,
     title: "Custom web applications",
-    body: "Booking flows, dashboards, internal tools or a simple admin system tailored to how your business actually works.",
+    body: "Booking flows, dashboards or admin tools built around how you actually work.",
   },
   {
     icon: RefreshCw,
     title: "Website redesign",
-    body: "Have an old or slow site? I rebuild it on a modern, maintainable foundation without losing what already works.",
+    body: "Rebuild an old or slow site on a modern, maintainable foundation.",
   },
   {
     icon: Plug,
     title: "Integrations",
-    body: "Connect your site to the tools you already use — forms, email, payments, calendars or third-party APIs.",
+    body: "Connect your site to forms, email, payments, calendars or other APIs.",
   },
   {
     icon: Gauge,
     title: "Performance improvements",
-    body: "Make an existing site noticeably faster and more reliable, which helps both visitors and search ranking.",
+    body: "Make an existing site noticeably faster and more reliable.",
   },
   {
     icon: Rocket,
     title: "Deployment & hosting setup",
-    body: "I handle domains, hosting and deployment so your site is live, secure and easy to maintain — with room to grow.",
+    body: "I handle domains, hosting and deployment so your site is live and secure.",
   },
 ];
 
 const steps = [
-  { n: "01", title: "Talk", body: "We discuss your business, your goals and what the website needs to do. No jargon, no obligation." },
-  { n: "02", title: "Plan", body: "You get a clear proposal: what I'll build, roughly how long it takes, and what it costs." },
-  { n: "03", title: "Build", body: "I build in the open and share progress early, so you can give feedback while there's still time to shape it." },
-  { n: "04", title: "Launch", body: "We put it live properly — domain, hosting, analytics and the details that make it feel finished." },
-  { n: "05", title: "Improve", body: "Optional ongoing technical improvements and small changes as your business grows." },
+  { n: "01", title: "Talk", body: "We discuss your goals and what the site needs to do. No jargon, no obligation." },
+  { n: "02", title: "Plan", body: "A clear proposal: what I'll build, how long it takes, and what it costs." },
+  { n: "03", title: "Build", body: "I build in the open and share progress early, so you can shape it." },
+  { n: "04", title: "Launch", body: "We go live properly — domain, hosting, analytics and the finishing details." },
+  { n: "05", title: "Improve", body: "Optional ongoing improvements as your business grows." },
 ];
 
 const WebDevelopment = () => {
@@ -98,15 +98,9 @@ const WebDevelopment = () => {
             <em className="italic text-gradient font-light">Odense &amp; Fyn</em>.
           </h1>
           <p className="mt-8 max-w-2xl text-lg text-muted-foreground leading-relaxed">
-            I'm <span className="text-foreground">Botond Füzi</span>, a professional software
-            engineer based in Odense. Alongside my engineering work, I help small and medium-sized
-            businesses across Denmark get a modern, fast website — or a custom web application built
-            around how they really work. You deal directly with the person building it.
-          </p>
-          <p className="mt-4 max-w-2xl text-muted-foreground leading-relaxed">
-            This isn't theory: I build and manage production websites for real businesses. Recent
-            work includes sites for a local gardening service on Fyn, an agricultural wholesaler and
-            a car dealership — all live, and all maintained by me. You can see them below.
+            I'm <span className="text-foreground">Botond Füzi</span>, a software engineer in Odense. I
+            build fast, modern websites and custom web apps for businesses across Denmark — and I
+            maintain them too. You deal directly with the person building it.
           </p>
 
           <div className="mt-10 flex flex-wrap gap-3">
@@ -225,22 +219,16 @@ const WebDevelopment = () => {
             Why work with an engineer
           </h2>
           <p className="text-muted-foreground leading-relaxed">
-            A template can get you online, but it rarely fits how your business actually runs — and
-            it can be slow, hard to change and awkward to extend later. Because I build software
-            professionally, your site is written on solid foundations: fast, secure, maintainable,
-            and ready to grow with features like bookings, integrations or an admin area when you
-            need them.
+            A template gets you online, but rarely fits how your business runs. Because I build
+            software professionally, your site is fast, secure and maintainable — ready to grow with
+            bookings, integrations or an admin area when you need them.
           </p>
           <p className="mt-4 text-muted-foreground leading-relaxed">
-            You can see the kind of production software I build on my{" "}
+            See the production software I build on my{" "}
             <Link to="/software-engineer" className="text-foreground underline underline-offset-4 hover:text-primary transition-colors">
-              software engineering page
-            </Link>{" "}
-            and in my{" "}
-            <Link to="/#work" className="text-foreground underline underline-offset-4 hover:text-primary transition-colors">
-              selected work
+              engineering page
             </Link>
-            . Based in Odense and available across Denmark, remotely or on Fyn.
+            . Based in Odense, available across Denmark and on Fyn.
           </p>
         </div>
       </section>

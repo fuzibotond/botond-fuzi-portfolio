@@ -146,7 +146,7 @@ export const Projects = () => (
     <SectionHeader
       eyebrow="Engineering projects"
       title={<>Deeper <em className="italic text-gradient font-light">technical</em> work.</>}
-      description="Backend, full-stack and applied-ML projects from my professional and academic work. Each is structured around the problem, the engineering decisions, and what actually shipped."
+      description="Backend, full-stack and applied-ML work — the problem, the decisions, and what shipped."
     />
 
     <div className="space-y-6">

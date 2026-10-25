@@ -16,27 +16,27 @@ const DESCRIPTION =
 const capabilities = [
   {
     title: "Backend systems & REST APIs",
-    body: "Production Java and Spring Boot services with JPA/Hibernate and SQL — plus experience with ASP.NET Core (C#). Comfortable owning modules end to end, from data model to endpoint.",
+    body: "Production Java and Spring Boot services with JPA/Hibernate and SQL, owned end to end — plus ASP.NET Core (C#).",
   },
   {
     title: "Full-stack web applications",
-    body: "Angular, TypeScript and RxJS on the frontend, wired to my own APIs. I've shipped customer-facing features used by European clients on a two-week Scrum cadence.",
+    body: "Angular, TypeScript and RxJS wired to my own APIs — shipped to European clients on a two-week Scrum cadence.",
   },
   {
     title: "AI-enabled & data-driven features",
-    body: "My MSc thesis built an AI-based pricing tool in Python (scikit-learn, pandas) with an explainable UI. I integrate model output and LLM APIs into real products, not demos.",
+    body: "An AI-based pricing tool in Python (scikit-learn, pandas) with an explainable UI. I ship model and LLM output into real products.",
   },
   {
     title: "Cloud, containers & delivery",
-    body: "Docker and Kubernetes, GitHub Actions CI, Kafka for messaging, and GCP from my Big Data and microservices coursework — I care about how software runs, not just how it builds.",
+    body: "Docker, Kubernetes, GitHub Actions CI, Kafka and GCP — I care about how software runs, not just how it builds.",
   },
   {
     title: "Testing & engineering quality",
-    body: "JUnit and Mockito, integration tests to pin legacy behaviour before refactoring, code review and clear documentation. I drove critical modules to full unit-test coverage at Sonrisa.",
+    body: "JUnit and Mockito, integration tests to pin legacy behaviour, code review and clear docs. I drove critical modules to full coverage at Sonrisa.",
   },
   {
     title: "Legacy modernization",
-    body: "Rewrote a high-security, high-availability government backend in Spring Boot — reusing trusted legacy services behind a clean boundary to preserve behaviour and improve efficiency.",
+    body: "Rewrote a high-security government backend in Spring Boot, reusing trusted legacy services behind a clean boundary.",
   },
 ];
 
@@ -73,11 +73,11 @@ const SoftwareEngineer = () => {
             <em className="italic text-gradient font-light">AI-enabled</em> products.
           </h1>
           <p className="mt-8 max-w-2xl text-lg text-muted-foreground leading-relaxed">
-            I'm <span className="text-foreground">Botond Füzi</span>, a software engineer based in
-            Odense, Denmark, with an <span className="text-foreground">MSc in Software Engineering
-            from SDU</span> and around two years of professional experience. I build reliable
-            backend and full-stack systems in <span className="text-foreground">Java, Spring Boot,
-            Angular and Python</span>, and I'm open to engineering roles across Denmark and Europe.
+            I'm <span className="text-foreground">Botond Füzi</span>, a software engineer in Odense with
+            an <span className="text-foreground">MSc from SDU</span> and ~2 years of experience. I build
+            reliable backend and full-stack systems in{" "}
+            <span className="text-foreground">Java, Spring Boot, Angular and Python</span>, and I'm open
+            to roles across Denmark and Europe.
           </p>
 
           <div className="mt-10 flex flex-wrap gap-3">

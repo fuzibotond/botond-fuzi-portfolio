@@ -24,7 +24,7 @@ export const SelectedWork = ({
       Websites I've <em className="italic text-gradient font-light">built and maintain</em>.
     </>
   ),
-  description = "Real production websites for real businesses. Each one I designed, built, deployed and continue to manage — visit them live, or read the short case study.",
+  description = "Real production websites I designed, built and still maintain. Visit them live, or read the short case study.",
   className = "",
 }: SelectedWorkProps) => (
   <section id="selected-work" className={`container py-24 ${className}`}>

@@ -45,22 +45,14 @@ export const About = () => (
         className="md:col-span-7 space-y-6 text-lg leading-relaxed text-muted-foreground"
       >
         <p>
-          I'm a software engineer with around <span className="text-foreground">two years of professional
+          Software engineer with around <span className="text-foreground">two years of professional
           experience</span> building Java/Spring Boot backends and Angular frontends — most recently at
-          Sonrisa, where I shipped customer features for clients and helped rewrite a
-          high-availability backend.
+          Sonrisa, shipping client features and helping rewrite a high-availability backend.
         </p>
         <p>
-          I finished my <span className="text-foreground">MSc in Software Engineering at SDU</span> in
-          Denmark, in collaboration with CompuSoft A/S. My thesis was on AI-based pricing and revenue
-          optimization for campsites and resorts — equal parts data engineering, modeling, and
-          designing a UI that domain experts actually trust.
-        </p>
-        <p>
-          I care about <span className="text-foreground">clean code, honest tests, and learning from
-          feedback</span>. I bring three languages to the team room (Hungarian, English, Romanian),
-          basic German, and I'm currently learning Danish. Looking for graduate or junior roles
-          where I can grow next to senior engineers who take craft seriously.
+          I hold an <span className="text-foreground">MSc in Software Engineering from SDU</span>, with a
+          thesis on AI-based pricing for campsites and resorts. I care about{" "}
+          <span className="text-foreground">clean code, honest tests, and learning in public</span>.
         </p>
 
         <div className="grid grid-cols-2 gap-6 pt-8">
