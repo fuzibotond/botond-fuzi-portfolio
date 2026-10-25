@@ -34,8 +34,8 @@ export const Contact = () => (
         </h2>
 
         <p className="mt-8 max-w-xl text-muted-foreground text-lg leading-relaxed">
-          I read every message. Best for graduate / junior software engineering roles, thesis-related
-          collaboration, or interesting side projects in Java, Spring Boot, Angular or AI.
+          I read every message — whether it's an engineering role, a website for your business, or an
+          interesting project.
         </p>
 
         <div className="mt-12 flex flex-wrap gap-3">

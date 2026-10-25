@@ -86,13 +86,9 @@ export const Hero = () => {
           className="mt-12 grid md:grid-cols-[1fr_auto] gap-8 items-end"
         >
           <p className="max-w-xl text-base md:text-lg text-muted-foreground leading-relaxed">
-  I'm <span className="text-foreground">Botond Füzi</span>, a software engineer with an{" "}
-  <span className="text-foreground">MSc in Software Engineering from SDU</span> and hands-on
-  experience building backend and full-stack systems with{" "}
-  <span className="text-foreground">Java, Spring Boot, Angular and Python</span>.
-  I'm especially interested in <span className="text-foreground">AI-powered products, agents,
-  automation and data-driven systems</span> — while still enjoying the craft of clean,
-  reliable general-purpose programming.
+  Software engineer in Odense with an <span className="text-foreground">MSc from SDU</span>. I build
+  reliable <span className="text-foreground">backend, full-stack and AI-enabled</span> software —
+  and modern <span className="text-foreground">websites for businesses</span> across Denmark.
 </p>
 
           <div className="flex flex-col gap-3">

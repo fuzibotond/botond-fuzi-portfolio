@@ -16,7 +16,7 @@ export const Stack = () => (
     <SectionHeader
       eyebrow="Stack & craft"
       title={<>Tools I reach for, <em className="italic text-gradient font-light">in context</em>.</>}
-      description="A working stack, not a wishlist. Listed by domain, with the practices I bring to each."
+      description="A working stack, not a wishlist — grouped by domain."
     />
 
     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
