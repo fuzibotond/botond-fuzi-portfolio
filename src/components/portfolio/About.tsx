@@ -6,7 +6,7 @@ export const About = () => (
   <section id="about" className="container py-32">
     <SectionHeader
       eyebrow="About"
-      title={<>Engineering as a <em className="italic text-gradient font-light">craft</em>, learned in public.</>}
+      title={<>Engineering as a <em className="italic text-gradient font-light">craft</em>, built to last.</>}
     />
 
     <div className="grid md:grid-cols-12 gap-10 items-start">
@@ -52,7 +52,7 @@ export const About = () => (
         <p>
           I hold an <span className="text-foreground">MSc in Software Engineering from SDU</span>, with a
           thesis on AI-based pricing for campsites and resorts. I care about{" "}
-          <span className="text-foreground">clean code, honest tests, and learning in public</span>.
+          <span className="text-foreground">clean code, honest tests, and work I'm proud to ship</span>.
         </p>
 
         <div className="grid grid-cols-2 gap-6 pt-8">
