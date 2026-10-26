@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import portrait from "@/assets/portrait.jpg";
+import portrait from "@/assets/portrait.webp";
 import { SectionHeader } from "./SectionHeader";
 
 export const About = () => (
